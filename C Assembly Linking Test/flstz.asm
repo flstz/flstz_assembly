@@ -1,0 +1,22 @@
+;ozsystem
+
+.386
+.MODEL FLAT
+
+PUBLIC _flstz
+
+.CODE
+
+_flstz	PROC NEAR32
+	PUSH	EBP
+	MOV		EBP, ESP
+
+	MOV		EAX, 99
+
+	MOV		ESP, EBP
+	POP		EBP
+	RET
+_flstz	ENDP
+
+END
+
